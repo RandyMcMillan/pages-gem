@@ -1,7 +1,10 @@
 ---
-author_profile: true
-permalink: /about/
 title: "GitHub Pages Docker"
+layout: home
+permalink: /
+title: "GitHub Pages Docker"
+author_profile: true
+
 ---
 
 <html>
@@ -23,7 +26,6 @@ SITE=./docs make server
 ```
 
 # Templated theme:
-
 
 Click [<i class=""></i> **Create Theme**](https://github.com/randymcmillan/pages-gem-starter/generate){: .btn .btn--primary} for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes){: .btn .btn--primary}.
 

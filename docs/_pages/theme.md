@@ -11,7 +11,7 @@ title: "Theme"
 
 # Pages-Gem remote theme starter
 
-Click [**Use this template**](https://github.com/randymcmillan/pages-gem-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+Click [<i class=""></i> **Create Theme**](https://github.com/randymcmillan/pages-gem-starter/generate){: .btn .btn--primary} for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes){: .btn .btn--primary}.
 
 Contains basic configuration to get you a site with:
 
@@ -24,3 +24,8 @@ Contains basic configuration to get you a site with:
 - Sample about page.
 - Sample 404 page.
 - Site wide search.
+
+
+## License
+
+Distributed under the [MIT License](https://raw.githubusercontent.com/RandyMcMillan/pages-gem/master/LICENSE){: .btn .btn--primary}.

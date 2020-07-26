@@ -13,49 +13,43 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
+title: ~/pages-gem
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
+  This is a a github pages docker implementation.
+  This project aims to simplify running a local
+  instance of a gh-pages repository by using docker.
+
+twitter_username: randymcmillan
+github_username: RandyMcMillan
 minimal_mistakes_skin: default
 search: true
 
 # Build settings
-markdown: CommonMark
-commonmark:
-  options: ["SMART", "FOOTNOTES"]
-  extensions: ["strikethrough", "autolink", "table"]
-#markdown: kramdown
+markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
+#theme: minimal-mistakes-jekyll
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-incremental: true
-
 include:
-  - _data
   - _pages
   - _posts
-  - assets
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
 # Plugins (previously gems:)
 plugins:
@@ -65,38 +59,41 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-  - jekyll-commonmark
 
+# REMINDER - You have to reload the _config.yml for changes to take effect
+# press ctrl-c to stop
+# SITE=./docs make image
+# SITE=./docs make server
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "@RandyMcMillan"
+  avatar : "https://avatars2.githubusercontent.com/u/152159?s=400&u=ddcb9078962d0497d29302d869925400f604e6c1&v=4"
+  bio    : "Operations Specialist  ----  USNavy    E616 FA72 21A1 613E 5B99 2062 9796 6C06 BB06 757B"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://"
+      url: "https://randymcmillan.github.io/pages-gem/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/randymcmillan"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/RandyMcMillan/pages-gem"
+#   - label: "Instagram"
+#     icon: "fab fa-fw fa-instagram"
+#     url: "https://instagram.com/"
 
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/RandyMcMillan"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/RandyMcMillan"
+#   - label: "Instagram"
+#     icon: "fab fa-fw fa-instagram"
+#     url: "https://instagram.com/"
 
 defaults:
   # _posts
@@ -124,3 +121,4 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
